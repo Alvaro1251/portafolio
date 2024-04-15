@@ -12,7 +12,8 @@ const TAB_DATA = [
         <li>Node.js</li>
         <li>Express</li>
         <li>PostgreSQL</li>
-        <li>Sequelize</li>
+        <li>MySQL</li>
+        <li>MongoDB</li>
         <li>JavaScript</li>
         <li>React</li>
       </ul>
@@ -23,8 +24,15 @@ const TAB_DATA = [
     id: "education",
     content: (
       <ul className="list-disc pl-2">
-        <li>Fullstack Academy of Code</li>
-        <li>University of California, Santa Cruz</li>
+        <li>
+          Ingeniería en Sistemas de Información, Universidad Tecnológica
+          Nacional, UTN-FRD (2020-actualidad)
+        </li>
+        <li>Desarrollador Front-end Academia Guayerd (2021)</li>
+        <li>
+          Bachillerato en economía y administración Colegio Mano Amiga Santa
+          María (2013-2018)
+        </li>
       </ul>
     ),
   },
@@ -33,8 +41,15 @@ const TAB_DATA = [
     id: "certifications",
     content: (
       <ul className="list-disc pl-2">
-        <li>AWS Cloud Practitioner</li>
-        <li>Google Professional Cloud Developer</li>
+        <li>
+          <a
+            href="https://drive.google.com/file/d/1l23udoj-mnPbjkLMiLy6V-NZ63d6iLue/view?usp=sharing"
+            target="_blank"
+            className="block bg-[#121212] hover:bg-slate-800 rounded-full px-5 py-2"
+          >
+            <span>Certificado de Desarrollador Front-end academia Guayerd</span>
+          </a>
+        </li>
       </ul>
     ),
   },
@@ -53,16 +68,19 @@ const AboutSection = () => {
   return (
     <section className="text-white" id="about">
       <div className="md:grid md:grid-cols-2 gap-8 items-center py-8 px-4 xl:gap-16 sm:py-16 xl:px-16">
-        <Image src="/images/about-image.png" width={500} height={500} className="rounded-lg"/>
+        <Image
+          src="/images/about-image.png"
+          width={500}
+          height={500}
+          className="rounded-lg"
+        />
         <div className="mt-4 md:mt-0 text-left flex flex-col h-full">
           <h2 className="text-4xl font-bold text-white mb-4">Sobre mi </h2>
           <p className="text-base lg:text-lg">
-            I am a full stack web developer with a passion for creating
-            interactive and responsive web applications. I have experience
-            working with JavaScript, React, Redux, Node.js, Express, PostgreSQL,
-            Sequelize, HTML, CSS, and Git. I am a quick learner and I am always
-            looking to expand my knowledge and skill set. I am a team player and
-            I am excited to work with others to create amazing applications.
+            Soy un full stack web developer con muchas ganas de aprender y
+            crecer profesionalmente. Cuento con experiencia como QA tester
+            freelancer en la plataforma uTest. Soy estudiante de Ingeniería en
+            Sistemas de Información. Me especialice en el Stack de Java Script tanto para el Front como Back-end. Tengo dominio de base datos relacionales y no relacionales.
           </p>
           <div className="flex flex-row justify-start mt-8">
             <TabButton
@@ -77,14 +95,14 @@ const AboutSection = () => {
               active={tab === "education"}
             >
               {" "}
-              Education{" "}
+              Educación{" "}
             </TabButton>
             <TabButton
               selectTab={() => handleTabChange("certifications")}
               active={tab === "certifications"}
             >
               {" "}
-              Certifications{" "}
+              Certificados{" "}
             </TabButton>
           </div>
           <div className="mt-8">

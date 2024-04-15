@@ -46,18 +46,19 @@ const EmailSection = () => {
     >
       <div className="bg-[radial-gradient(ellipse_at_center,_var(--tw-gradient-stops))] from-primary-900 to-transparent rounded-full h-80 w-80 z-0 blur-lg absolute top-3/4 -left-4 transform -translate-x-1/2 -translate-1/2"></div>
       <div className="z-10">
-        <h5 className="text-xl font-bold text-white my-2">
-          Contactémonos. 
-        </h5>
+        <h5 className="text-xl font-bold text-white my-2">Contactémonos.</h5>
         <p className="text-[#ADB7BE] mb-4 max-w-md">
           {" "}
-          Siempre estoy abierto a nuevas posibilidades y ofertas. Te dejo mi perfil de LinkedIn para que conectemos, así como también mi perfil de GitHub. Ante cualquier duda, consulta o propuesta, podés mandarme un mail en el siguiente apartado:
+          Siempre estoy abierto a nuevas posibilidades y ofertas. Te dejo mi
+          perfil de LinkedIn para que conectemos, así como también mi perfil de
+          GitHub. Ante cualquier duda, consulta o propuesta, podés mandarme un
+          mail en el siguiente apartado:
         </p>
         <div className="socials flex flex-row gap-2">
-          <Link href="https://github.com/Alvaro1251">
+          <Link href="https://github.com/Alvaro1251" target="_blank">
             <Image src={GithubIcon} alt="Github Icon" />
           </Link>
-          <Link href="https://www.linkedin.com/in/alvarosignorio">
+          <Link href="https://www.linkedin.com/in/alvarosignorio" target="_blank">
             <Image src={LinkedinIcon} alt="Linkedin Icon" />
           </Link>
         </div>
@@ -117,7 +118,7 @@ const EmailSection = () => {
             </div>
             <button
               type="submit"
-              className="bg-primary-500 hover:bg-primary-600 text-white font-medium py-2.5 px-5 rounded-lg w-full"
+              className="bg-[#12193E] hover:bg-primary-600 text-white font-medium py-2.5 px-5 rounded-lg w-full"
             >
               Enviar mensaje
             </button>
