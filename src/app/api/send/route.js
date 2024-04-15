@@ -9,20 +9,27 @@ export async function POST(req, res) {
   console.log(email, subject, message);
   try {
     const data = await resend.emails.send({
-      from: fromEmail,
+      from: "Alvaro no-responder <onboarding@resend.dev>",
       to: [fromEmail, email],
       subject: subject,
       react: (
         <>
           <h1>{subject}</h1>
-          <p>Thank you for contacting us!</p>
-          <p>New message submitted:</p>
+          <p>Muchas gracias por contactarte conmigo!</p>
+          <p>Mensaje enviado:</p>
           <p>{message}</p>
+          <p>Desde el mail:</p>
+          <p>{email}</p>
         </>
       ),
     });
+
+    console.log(data)
+
     return NextResponse.json(data);
+
   } catch (error) {
+    console.log(error)
     return NextResponse.json({ error });
   }
 }

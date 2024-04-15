@@ -65,7 +65,7 @@ const EmailSection = () => {
       <div>
         {emailSubmitted ? (
           <p className="text-green-500 text-sm mt-2">
-            Email enviado!
+            Email enviado exitosamente! Muchas gracias
           </p>
         ) : (
           <form className="flex flex-col" onSubmit={handleSubmit}>
