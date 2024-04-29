@@ -50,6 +50,15 @@ const TAB_DATA = [
             <span>Certificado de Desarrollador Front-end academia Guayerd</span>
           </a>
         </li>
+        <li>
+          <a
+            href="https://drive.google.com/file/d/1NBYANOTw9TBbqWuKs2YTESBUGx2tmGC6/view?usp=sharing"
+            target="_blank"
+            className="block bg-[#121212] hover:bg-slate-800 rounded-full px-5 py-2"
+          >
+            <span>Certificado SQL Desafío Latam</span>
+          </a>
+        </li>
       </ul>
     ),
   },
